@@ -1,7 +1,11 @@
-<div class="container">
-  <h1 class="title">
-    {{ 'PAGES.DETAIL.TITLE' | translate }}
-  </h1>
+<div>
+  <ngx-codemirror
+    [(ngModel)]="pegCode"
+    [options]="{
+    lineNumbers: true,
+    theme: 'default',
+    mode: 'pegjs'
+  }"
+  ></ngx-codemirror>
 
-  <a routerLink="/">{{ 'PAGES.DETAIL.BACK_TO_HOME' | translate }}</a>
 </div>
