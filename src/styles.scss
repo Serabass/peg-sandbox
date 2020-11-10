@@ -56,4 +56,9 @@ a.btn {
 .CodeMirror {
   border: 1px solid #eee;
   height: 100% !important;
+  max-height: 800px !important;
+}
+
+.error-line {
+  background: #ff00001c;
 }

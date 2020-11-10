@@ -12,6 +12,7 @@
         </div>
         <div nz-col nzSpan="8" [style.min-height]="'100%'">
           <ngx-codemirror
+            #file
             [(ngModel)]="storage.file"
             (ngModelChange)="parse()"
             [options]="editor2Options"
